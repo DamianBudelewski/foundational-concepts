@@ -1,9 +1,10 @@
 def pig_latin(sentence):
-    """
-    Pig Latin function a secret language formed from English by transferring the
-    initial consonant or consonant cluster of each word to the end of the word
-    and adding a vocalic syllable (usually /eɪ/): so pig Latin would be igpay
-    atinlay.
+    """Performs pig latin translation on given sentence.
+
+    Transfer initial consonant or consonant cluster of each word to the end
+    of the word and adding a vocalic syllable (usually /eɪ/)
+
+    example: "pig latin" would be "igpay atinlay"
     """
     try:
         transformed_sentence = str()
