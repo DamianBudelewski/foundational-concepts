@@ -6,6 +6,7 @@ def pig_latin(sentence):
 
     example: "pig latin" would be "igpay atinlay"
     """
+
     try:
         transformed_sentence = str()
         for word in sentence.split(" "):
