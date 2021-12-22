@@ -65,7 +65,7 @@ def largest_factor(n):
 def limited(x, z, limit):
     """Logic that is common to invert and change."""
     if x != 0:
-        return min(z, limit)
+        return min(z / x, limit)
     else:
         return limit
 
@@ -85,7 +85,7 @@ def invert_short(x, limit):
     >>> invert_short(x, 100)  # No error, even though 1/x divides by 0!
     100
     """
-    return limited(x, 1 / x, limit)
+    return limited(x, 1, limit)
 
 
 def change_short(x, y, limit):
@@ -103,7 +103,7 @@ def change_short(x, y, limit):
     >>> change_short(x, y, 100)  # No error, even though abs(y - x) / x divides by 0!
     100
     """
-    return limited(x, abs(y - x) / x, limit)
+    return limited(x, abs(y - x), limit)
 
 
 def invert_and_change_syntax_check():
