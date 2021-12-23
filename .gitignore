@@ -1,2 +1,4 @@
 # dir where I put labs from https://cs61a.org/lab/lab**
 cs61a/labs/
+
+__pycache__/
