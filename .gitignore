@@ -1,4 +1,5 @@
-# dir where I put labs from https://cs61a.org/lab/lab**
+# dir where I put labs and homeworks from https://cs61a.org/
 cs61a/labs/
+cs61a/homeworks/
 
 __pycache__/
