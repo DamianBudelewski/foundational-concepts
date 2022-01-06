@@ -41,6 +41,28 @@ def square(x):
     return x * x
 
 
+def merge_the_list(list_to_merge, merger_operation):
+    """Roll up the list forward
+
+    It's done by merging each of the item with the next and overwriting it.
+    This should look like this when it comes to add operation:
+
+    1 + 2 + 3 + 4 + 5
+    1 + 3 + 3 + 4 + 5   <- 2 changed to 3 as result of 1 + 2
+    1 + 3 + 6 + 4 + 5   <- 3 changed to 6 as result of 3 + 3
+    1 + 3 + 6 + 10 + 5  <- 4 changed to 10 as result of 6 + 4
+    1 + 3 + 6 + 10 + 15 <- last point is the result
+
+    >>> merge_the_list([1,2,3], add)
+    6
+    >>> merge_the_list([2,2,2], mul)
+    8
+    """
+    for i in range(0, len(list_to_merge) - 1):
+        list_to_merge[i + 1] = merger_operation(list_to_merge[i], list_to_merge[i + 1])
+    return list_to_merge[-1]
+
+
 def accumulate(merger, base, n, term):
     """Return the result of merging the first n terms in a sequence and base.
     The terms to be merged are term(1), term(2), ..., term(n). merger is a
@@ -65,7 +87,11 @@ def accumulate(merger, base, n, term):
     >>> accumulate(lambda x, y: (x + y) % 17, 19, 20, square)
     16
     """
-    "*** YOUR CODE HERE ***"
+    items_to_merge = list()
+    items_to_merge.append(base)
+    for i in range(1, n + 1):
+        items_to_merge.append(term(i))
+    return merge_the_list(items_to_merge, merger)
 
 
 def summation_using_accumulate(n, term):
@@ -76,7 +102,7 @@ def summation_using_accumulate(n, term):
     >>> summation_using_accumulate(5, triple)
     45
     """
-    "*** YOUR CODE HERE ***"
+    return accumulate(add, 0, n, term)
 
 
 def product_using_accumulate(n, term):
@@ -87,7 +113,7 @@ def product_using_accumulate(n, term):
     >>> product_using_accumulate(6, triple)
     524880
     """
-    "*** YOUR CODE HERE ***"
+    return accumulate(mul, 1, n, term)
 
 
 def accumulate_syntax_check():
