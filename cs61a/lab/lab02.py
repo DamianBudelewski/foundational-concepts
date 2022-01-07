@@ -14,7 +14,7 @@ def lambda_curry2(func):
     >>> lambda_curry2(mod)(123)(10)
     3
     """
-    "*** YOUR CODE HERE ***"
+    return lambda x: lambda y: func(x, y)
 
 
 def lambda_curry2_syntax_check():
