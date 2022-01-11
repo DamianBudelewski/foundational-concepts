@@ -55,7 +55,15 @@ def count_cond(condition):
     >>> count_primes(20)   # 2, 3, 5, 7, 11, 13, 17, 19
     8
     """
-    "*** YOUR CODE HERE ***"
+
+    def calc(N):
+        count = 0
+        for i in range(1, N + 1):
+            if condition(N, i) == True:
+                count += 1
+        return count
+
+    return calc
 
 
 def composer(f, g):
