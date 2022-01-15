@@ -134,4 +134,23 @@ def cycle(f1, f2, f3):
     >>> do_two_cycles(1)
     19
     """
-    "*** YOUR CODE HERE ***"
+
+    def calculate_no_cycles(no_applies):
+        no_full_cycles = int(no_applies / 3)
+        no_functions_in_incomplete_cycle = no_applies % 3
+
+        def apply_functions(number):
+            for full_cycles in range(0, no_full_cycles):
+                number = f3(f2(f1(number)))
+            for i in range(1, no_functions_in_incomplete_cycle + 1):
+                if i == 1:
+                    number = f1(number)
+                elif i == 2:
+                    number = f2(number)
+                elif i == 3:
+                    number = f3(number)
+            return number
+
+        return apply_functions
+
+    return calculate_no_cycles
