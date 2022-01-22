@@ -9,7 +9,7 @@
 - next homework - [3. Recursion, Tree Recursion](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw03)
 
 ### Brian Harvey’s SICP lectures
--	next video - [Functional programming 2](https://archive.org/details/ucberkeley_webcast_TTK2lZoWbPQ)
+-	next video - [Higher-order procedures 1](https://archive.org/details/ucberkeley_webcast_ogIGxEzvnSE)
 
 ## Links
 
