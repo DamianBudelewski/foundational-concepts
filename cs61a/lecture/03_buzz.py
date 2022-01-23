@@ -3,20 +3,20 @@ This is the python implementation of buzz game.
 
 It's based on the CS61a lecture on functional programming 2
 
-This module supplies two functions, in_string() and buzz()
+This module supplies two functions, is_in_string() and buzz()
 """
 
 
-def in_string(string, value):
-    """Check for number occurence in provided string
+def is_in_string(char, string):
+    """Check for char occurence in provided string
 
-    >>> in_string(str(15),'3')
+    >>> is_in_string('3', str(15))
     False
-    >>> in_string(str(15),'5')
+    >>> is_in_string('5', str(15))
     True
     """
     for i in range(0, len(string)):
-        if string[i] == value:
+        if string[i] == char:
             return True
     return False
 
@@ -35,7 +35,7 @@ def buzz(x):
     >>> buzz(20)
     20
     """
-    print("buzz") if in_string(str(x), "7") or x % 7 == 0 else print(x)
+    print("buzz") if is_in_string("7", str(x)) or x % 7 == 0 else print(x)
 
 
 if __name__ == "__main__":
