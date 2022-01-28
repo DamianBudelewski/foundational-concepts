@@ -58,7 +58,14 @@ def paths(m, n):
     >>> paths(1, 157)
     1
     """
-    "*** YOUR CODE HERE ***"
+    if m == 1 and n == 1:
+        return 1
+    if m == 1 and n > 1:
+        return 1
+    if n == 1 and m > 1:
+        return 1
+    else:
+        return paths(m - 1, n) + paths(m, n - 1)
 
 
 def couple(s, t):
