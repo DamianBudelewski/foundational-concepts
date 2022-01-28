@@ -81,7 +81,9 @@ def couple(s, t):
     [['c', 's'], [6, '1']]
     """
     assert len(s) == len(t)
-    "*** YOUR CODE HERE ***"
+    coupled_list = list()
+    [coupled_list.insert(i, (s[i], t[i])) for i in range(len(s))]
+    return coupled_list
 
 
 def coords(fn, seq, lower, upper):
