@@ -3,7 +3,6 @@ HW_SOURCE_FILE = __file__
 
 def num_eights(pos):
     """Returns the number of times 8 appears as a digit of pos.
-
     >>> num_eights(3)
     0
     >>> num_eights(8)
@@ -22,7 +21,12 @@ def num_eights(pos):
     ...       ['Assign', 'AnnAssign', 'AugAssign', 'NamedExpr'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    if pos <= 10:
+        if pos == 8:
+            return 1
+        else:
+            return 0
+    return num_eights(pos // 10) + num_eights(pos % 10)
 
 
 def pingpong(n):
