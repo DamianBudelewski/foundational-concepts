@@ -62,7 +62,37 @@ def pingpong(n):
     ...       ['Assign', 'AnnAssign', 'AugAssign', 'NamedExpr'])
     True
     """
-    "*** YOUR CODE HERE ***"
+
+    def contains_eight(number):
+        if number <= 10:
+            if number == 8:
+                return True
+            return False
+        return contains_eight(number // 10) or contains_eight(number % 10)
+
+    def is_multiple_of_eight(number):
+        return True if number % 8 == 0 else False
+
+    def counting_up(number):
+        return number + 1
+
+    def counting_down(number):
+        return number - 1
+
+    def change_direction(function):
+        if function == counting_up:
+            return counting_down
+        elif function == counting_down:
+            return counting_up
+
+    current_direction = counting_up
+    x = 0
+    for i in range(1, n + 1):
+        x = current_direction(x)
+        print(f"{i} - {x} - {current_direction}")
+        if is_multiple_of_eight(i) or contains_eight(i):
+            print("Changing direction")
+            current_direction = change_direction(current_direction)
 
 
 def missing_digits(n):
