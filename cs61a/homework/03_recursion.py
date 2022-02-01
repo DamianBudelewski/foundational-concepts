@@ -73,26 +73,16 @@ def pingpong(n):
     def is_multiple_of_eight(number):
         return True if number % 8 == 0 else False
 
-    def counting_up(number):
-        return number + 1
+    def counting(n, iteration, end_value, direction):
+        if iteration == n:
+            return end_value
+        else:
+            if is_multiple_of_eight(iteration) or contains_eight(iteration):
+                return counting(n, iteration + 1, end_value - direction, -direction)
+            else:
+                return counting(n, iteration + 1, end_value + direction, direction)
 
-    def counting_down(number):
-        return number - 1
-
-    def change_direction(function):
-        if function == counting_up:
-            return counting_down
-        elif function == counting_down:
-            return counting_up
-
-    current_direction = counting_up
-    x = 0
-    for i in range(1, n + 1):
-        x = current_direction(x)
-        print(f"{i} - {x} - {current_direction}")
-        if is_multiple_of_eight(i) or contains_eight(i):
-            print("Changing direction")
-            current_direction = change_direction(current_direction)
+    return counting(n, 1, 1, 1)
 
 
 def missing_digits(n):
