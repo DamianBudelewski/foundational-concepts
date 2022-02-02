@@ -112,7 +112,15 @@ def missing_digits(n):
     >>> check(HW_SOURCE_FILE, 'missing_digits', ['While', 'For'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    if n > 12:
+        last_digit = n % 10
+        previous_digit = n // 10 % 10
+        if previous_digit == last_digit - 1 or previous_digit == last_digit:
+            return missing_digits(n // 10)
+        elif previous_digit < last_digit - 1:
+            return last_digit - previous_digit - 1 + missing_digits(n // 10)
+    else:
+        return 0
 
 
 def ascending_coin(coin):
