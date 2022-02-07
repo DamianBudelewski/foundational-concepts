@@ -1,12 +1,16 @@
 # Composing programs with Brian Harvey’s SICP lectures
 
+## Links
+
+- [debugger](https://pythontutor.com/composingprograms.html)
+
 ## Progress
 
 ### Composing programs
 
 - next chapter - [2.1   Introduction](https://composingprograms.com/pages/21-introduction.html)
 - next lab - [5. Python Lists, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab05)
-- next homework - [3. Recursion, Tree Recursion](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw03)
+- next homework - [4. Data Abstraction, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw04)
 
 ### Brian Harvey’s SICP lectures
 -	next video - [Higher-order procedures 1](https://archive.org/details/ucberkeley_webcast_ogIGxEzvnSE)
