@@ -176,7 +176,34 @@ def count_coins(change):
     >>> check(HW_SOURCE_FILE, 'count_coins', ['While', 'For'])
     True
     """
-    "*** YOUR CODE HERE ***"
+
+    def descending_helper(change, largest_coin):
+        if change == 0:
+            return 1
+        elif change < 0:
+            return 0
+        elif largest_coin == None:
+            return 0
+        else:
+            return descending_helper(
+                change - largest_coin, largest_coin
+            ) + descending_helper(change, descending_coin(largest_coin))
+
+    # return descending_helper(change, 25)
+
+    def ascending_helper(change, smallest_coin):
+        if change == 0:
+            return 1
+        elif change < 0:
+            return 0
+        elif smallest_coin == None:
+            return 0
+        else:
+            return ascending_helper(
+                change - smallest_coin, smallest_coin
+            ) + ascending_helper(change, ascending_coin(smallest_coin))
+
+    return ascending_helper(change, 1)
 
 
 def print_move(origin, destination):
