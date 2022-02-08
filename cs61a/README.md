@@ -13,7 +13,7 @@
 - next homework - [4. Data Abstraction, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw04)
 
 ### Brian Harvey’s SICP lectures
--	next video - [Higher-order procedures 1](https://archive.org/details/ucberkeley_webcast_ogIGxEzvnSE)
+-	next video - [Higher-order procedures 2](https://archive.org/details/ucberkeley_webcast_ZvH3wF2qg7Q)
 
 ## Links
 
