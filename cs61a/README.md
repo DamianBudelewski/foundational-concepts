@@ -13,7 +13,7 @@
 - next homework - [4. Data Abstraction, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw04)
 
 ### Brian Harvey’s SICP lectures
--	next video - [Lecture 7: orders of growth](https://archive.org/details/ucberkeley_webcast_32L5j10rrK0)
+-	next video - [Lecture 8: recursion and iteration](https://archive.org/details/ucberkeley_webcast_0G3tNuBBO5I)
 
 ## Links
 
