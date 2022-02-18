@@ -13,7 +13,7 @@
 - next homework - [4. Data Abstraction, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw04)
 
 ### Brian Harvey’s SICP lectures
--	next video - [Lecture 8: recursion and iteration](https://archive.org/details/ucberkeley_webcast_0G3tNuBBO5I)
+-	next video - [Lecture 9: data abstraction](https://archive.org/details/ucberkeley_webcast_Oy36XpGVyjA)
 
 ## Links
 
