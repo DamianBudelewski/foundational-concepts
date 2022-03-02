@@ -114,7 +114,23 @@ def balanced(m):
     >>> check(HW_SOURCE_FILE, 'balanced', ['Index'])
     True
     """
-    "*** YOUR CODE HERE ***"
+    if is_mobile(m):
+        """Check if torque applied by mobiles left arm is equal to that applied by its right arm."""
+        torque_on_the_left_side = length(left(m)) * total_weight(end(left(m)))
+        torque_on_the_right_side = length(right(m)) * total_weight(end(right(m)))
+        if torque_on_the_left_side == torque_on_the_right_side:
+            if is_mobile(end(left(m))) or is_mobile(end(right(m))):
+                """Recursive call to check if each of the mobiles hanging at the end of its arms is balanced."""
+                return balanced(end(left(m))) and balanced(end(right(m)))
+            else:
+                return True
+        else:
+            return False
+    elif is_planet(m):
+        """Planets themselves are balanced, as there is nothing hanging off of them."""
+        return True
+    else:
+        raise ValueError("Received input different than mobile and planet")
 
 
 def totals_tree(m):
