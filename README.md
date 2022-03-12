@@ -5,3 +5,4 @@
 # Resources
 
 - [Teach Yourself Computer Science](https://teachyourselfcs.com/)
+- [A non-standard book list for software developers](https://mihaiolteanu.me/books.html)
