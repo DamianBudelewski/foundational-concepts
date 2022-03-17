@@ -205,7 +205,19 @@ def replace_loki_at_leaf(t, lokis_replacement):
     >>> laerad == yggdrasil # Make sure original tree is unmodified
     True
     """
-    "*** YOUR CODE HERE ***"
+    # Base case that looks for 'loki' label
+    if is_leaf(t):
+        if label(t) == "loki":
+            return tree(
+                lokis_replacement
+            )  # Overwrite existing node label with replacement word
+        return t  # If label is different than loki, return untouched tree
+
+    # Return new tree with current label and iterate over all branches to apply base case
+    return tree(
+        label(t),
+        [replace_loki_at_leaf(branch, lokis_replacement) for branch in branches(t)],
+    )
 
 
 def has_path(t, word):
