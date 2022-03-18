@@ -223,7 +223,6 @@ def replace_loki_at_leaf(t, lokis_replacement):
 def has_path(t, word):
     """Return whether there is a path in a tree where the entries along the path
     spell out a particular word.
-
     >>> greetings = tree('h', [tree('i'),
     ...                        tree('e', [tree('l', [tree('l', [tree('o')])]),
     ...                                   tree('y')])])
@@ -251,7 +250,13 @@ def has_path(t, word):
     False
     """
     assert len(word) > 0, "no path for empty word."
-    "*** YOUR CODE HERE ***"
+    if label(t) == word[0]:
+        if len(word) == 1:
+            return True
+        else:
+            return any([has_path(branch, word[1:]) for branch in branches(t)])
+    else:
+        return False
 
 
 def preorder(t):
