@@ -8,7 +8,7 @@
 
 ### Composing programs
 
-- next chapter - [2.3 Sequences](https://composingprograms.com/pages/23-sequences.html)
+- next chapter - [2.4 Mutable Data](https://composingprograms.com/pages/24-mutable-data.html)
 - next lab - [5. Python Lists, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab05)
 - next homework - [5. Iterators and Generators](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw05)
 
