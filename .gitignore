@@ -1,5 +1,21 @@
-# dir where I put labs and homeworks from https://cs61a.org/
+# Repository
+
+## CS61A - empty template folders used as a backup in case those are no longer available online
 cs61a/labs/
 cs61a/homeworks/
 
+# Python
+
+## Byte-compiled / optimized / DLL files
 __pycache__/
+*.py[cod]
+*$py.class
+
+## Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
