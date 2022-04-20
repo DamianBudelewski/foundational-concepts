@@ -9,8 +9,7 @@ def factors_list(n):
     >>> factors_list(28)
     [1, 2, 4, 7, 14]
     """
-    all_factors = []
-    "*** YOUR CODE HERE ***"
+    return [i for i in range(1, n - 1) if n % i == 0]
 
 
 def flatten(s):
