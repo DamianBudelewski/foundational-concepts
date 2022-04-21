@@ -28,7 +28,16 @@ def flatten(s):
     >>> x
     [[1, [1, 1]], 1, [1, 1]]
     """
-    "*** YOUR CODE HERE ***"
+
+    def helper(current_s, new_s):
+        for x in current_s:
+            if type(x) == list:
+                helper(x, new_s)
+            else:
+                new_s.append(x)
+        return new_s
+
+    return helper(s, list())
 
 
 from math import sqrt
