@@ -13,7 +13,8 @@
 - next homework - [5. Iterators and Generators](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw05)
 
 ### Brian Harvey’s SICP lectures
--	next video - [Lecture 10: sequences](https://archive.org/details/ucberkeley_webcast__qGeRWplPgc)
+
+-	next video - [Lecture 11: Calculator](https://archive.org/details/ucberkeley_webcast_nzMPF59Ackg)
 
 ## Links
 
