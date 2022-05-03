@@ -3,6 +3,7 @@
 ## Links
 
 - [debugger](https://pythontutor.com/composingprograms.html)
+- [CS61a](https://cs61a.org/)
 
 ## Progress
 
@@ -16,7 +17,3 @@
 ### Brian Harvey’s SICP lectures
 
 -	next video - [Lecture 11: Calculator](https://archive.org/details/ucberkeley_webcast_nzMPF59Ackg)
-
-## Links
-
-- [CS61a](https://cs61a.org/)
