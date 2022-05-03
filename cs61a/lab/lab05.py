@@ -220,7 +220,9 @@ def sprout_leaves(t, leaves):
           1
           2
     """
-    "*** YOUR CODE HERE ***"
+    if is_leaf(t):
+        return tree(label(t), [tree(leave) for leave in leaves])
+    return tree(label(t), [sprout_leaves(branch, leaves) for branch in branches(t)])
 
 
 # Abstraction tests for sprout_leaves and berry_finder
