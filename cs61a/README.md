@@ -9,8 +9,9 @@
 ### Composing programs
 
 - next chapter - [2.4 Mutable Data](https://composingprograms.com/pages/24-mutable-data.html)
-- next lab - [5. Python Lists, Trees](https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab05)
+- next lab - [6. Mutability and Iterators](https://inst.eecs.berkeley.edu/~cs61a/fa21/lab/lab06)
 - next homework - [5. Iterators and Generators](https://inst.eecs.berkeley.edu/~cs61a/fa21/hw/hw05)
+	-	readings: [4.2 Implicit Sequences](https://composingprograms.com/pages/42-implicit-sequences.html)
 
 ### Brian Harvey’s SICP lectures
 
