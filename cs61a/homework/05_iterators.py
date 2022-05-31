@@ -20,7 +20,15 @@ def gen_perms(seq):
     >>> sorted(gen_perms("ab"))
     [['a', 'b'], ['b', 'a']]
     """
-    "*** YOUR CODE HERE ***"
+    # base case
+    if len(seq) == 1:
+        yield seq
+    else:
+        # return all of the permutations of sequence without the first character
+        for perm in gen_perms(seq[1:]):
+            # enumerate and insert missing first character anywhere
+            for i in range(len(seq)):
+                yield perm[:i] + [seq[0]] + perm[i:]
 
 
 def path_yielder(t, value):

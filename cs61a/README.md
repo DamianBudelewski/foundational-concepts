@@ -4,6 +4,7 @@
 
 - [debugger](https://pythontutor.com/composingprograms.html)
 - [CS61a](https://cs61a.org/)
+- [Worksheets and Solutions for challenging problems in CS61A](https://alextseng.net/teaching/cs61a/)
 
 ## Progress
 
